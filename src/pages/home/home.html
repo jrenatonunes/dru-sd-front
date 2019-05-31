@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+
+      <ion-buttons start>
+          <button ion-button (click)="doClickConsulta()">
+            <ion-icon name="contact"></ion-icon>
+          </button>
+        </ion-buttons>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+          Home
+        </ion-title>
+        <ion-buttons end>
+          <button ion-button (click)="doClickAbout()">
+            <ion-icon name="more"></ion-icon>
+          </button>
+        </ion-buttons>
+
+  </ion-navbar>
+
+
+
+</ion-header>
+
+
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+
+<ion-content padding>
+  <h2>Seja bem vindo ao Projeto DRU de SD 2019!</h2>
+  <p>
+    Aqui é sua tela inicial.
+  </p>
+  <button ion-button color="primary" (click)="pushPage()">Consulta</button>
+
+  <button ion-button color="secondary" (click)="pushPage()">Alterar</button>
+
+  <button ion-button color="danger" (click)="logout()">Sair</button>
+</ion-content>
