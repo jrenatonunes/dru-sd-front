@@ -9,7 +9,7 @@ import { PerfilPage } from './../perfil/perfil';
 import { AboutPage } from './../about/about';
 
 import { RestapiServiceProvider } from '../../providers/restapi-service/restapi-service';
-
+import { Toast } from '@ionic-native/toast/ngx';
 
 
 
@@ -24,6 +24,7 @@ export class HomePage {
 
 
  public listaRU: any;
+ public toast: Toast
  private url: string = "https://www.reddit.com/new.json";
  users: any;
 
@@ -42,6 +43,14 @@ export class HomePage {
     .then(data => {
       this.users = data;
     });
+  }
+
+
+
+
+
+  itemSelecionado (user):void {
+    alert("Selecionado usuário " + user.name);
   }
 
 

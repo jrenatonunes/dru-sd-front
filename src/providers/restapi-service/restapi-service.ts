@@ -12,6 +12,7 @@ import 'rxjs/add/operator/map';
 export class RestapiServiceProvider {
 
   apiUrl = 'https://jsonplaceholder.typicode.com';
+  //apiUrl = "https://dru-server.herokuapp.com/";
   private data: any;
 
   constructor(public http: Http) {
@@ -26,11 +27,11 @@ export class RestapiServiceProvider {
 
     return new Promise(resolve => {
       this.http.get(this.apiUrl+'/users')
-        .map(res => res.json())
-        .subscribe(data => {
-          this.data = data;
-          resolve(this.data);
-        });
+      .map(res => res.json())
+      .subscribe(data => {
+        this.data = data;
+        resolve(this.data);
+      });
     });
   }
 

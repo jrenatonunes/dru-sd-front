@@ -27521,6 +27521,10 @@ ion-navbar.toolbar {
   -webkit-border-radius: 50%;
 }
 
+.fundo-cinza {
+  background-color: "#CCCCCC";
+}
+
 .pequeno {
   zoom: 0.75;
 }
@@ -27535,6 +27539,14 @@ ion-navbar.toolbar {
 
 .grande {
   zoom: 2.0;
+}
+
+.enorme {
+  zoom: 4.0;
+}
+
+.gigante {
+  zoom: 6.0;
 }
 
 page-consulta .user-photo ion-avatar {

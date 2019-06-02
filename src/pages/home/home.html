@@ -6,7 +6,17 @@
         <ion-title>
           Documento de Registro Único
         </ion-title>
+
+
+        <ion-buttons end>
+          <button ion-button icon-only (click)="showFilters()">
+            <ion-icon name="search"></ion-icon>
+          </button>
+        </ion-buttons>
+
   </ion-navbar>
+
+
 
 </ion-header>
 
@@ -26,10 +36,11 @@
       <ion-thumbnail item-left>
         <img class="circle" src="https://a.thumbs.redditmedia.com/PNviGIV-Yw7WSGknAz2kDTAKEx8iBGfhKXjJzENZEL8.jpg">
       </ion-thumbnail>
+      <h2><b>{{user.username}}</b></h2>
       <h2>{{user.name}}</h2>
       <p>{{user.email}}</p>
 
-      <ion-icon name="add-circle" class="medio" color="primary" item-right (click)="openPage(dogsPage)"></ion-icon>
+      <ion-icon name="add-circle" class="medio" color="primary" item-right (click)="itemSelecionado(user)"></ion-icon>
 
     </ion-item>
 

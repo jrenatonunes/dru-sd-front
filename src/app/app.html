@@ -4,17 +4,37 @@
     <ion-toolbar color="primary">
       <ion-title>Menu</ion-title>
     </ion-toolbar>
+
   </ion-header>
 
   <ion-content no-padding class="no-scroll">
 
-    <ion-list padding>
+
+    <div padding>
+
+      <!-- <ion-icon name="contact" class="gigante" item-left></ion-icon> -->
+
+      <img src="../assets/images/usuario.png">
+
+      <p>
+        <b>fulano</b><br>
+        Fulano de Tal<br>
+        <i>fulano@fulanodetal.com.br</i>
+      </p>
+    </div>
+
+
+
+    <ion-list no-padding no-lines>
 
       <ion-item-divider>
-        <ion-label>
+        <!-- <ion-label>
           Minhas Atividades
-        </ion-label>
+        </ion-label> -->
       </ion-item-divider>
+
+
+
 
       <button ion-item menuClose (click)="openPage(homePage)">
         <ion-icon name="home" item-left=""></ion-icon>
@@ -34,11 +54,11 @@
 
 
 
-      <br>
+      <!-- <br> -->
       <ion-item-divider>
-        <ion-label>
+        <!-- <ion-label>
           Solicitados pra Mim
-        </ion-label>
+        </ion-label> -->
       </ion-item-divider>
 
       <button ion-item menuClose (click)="openPage(catsPage)">
@@ -54,11 +74,11 @@
 
 
 
-      <br>
+      <!-- <br> -->
       <ion-item-divider>
-        <ion-label>
+        <!-- <ion-label>
           Sistema
-        </ion-label>
+        </ion-label> -->
       </ion-item-divider>
 
       <button ion-item menuClose (click)="openPage(dogsPage)">

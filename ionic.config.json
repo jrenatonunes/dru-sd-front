@@ -1,5 +1,7 @@
 {
   "name": "ionicDRU",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
