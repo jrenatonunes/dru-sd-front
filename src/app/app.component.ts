@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 @Component({
   templateUrl: 'app.html'
 })
+
 export class ComponentInicial {
   @ViewChild(Nav) nav: Nav;
   rootPage: any = LoginPage;

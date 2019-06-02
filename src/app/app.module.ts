@@ -19,6 +19,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginServiceProvider } from '../providers/login-service/login-service';
 import { XHRBackend, RequestOptions } from '@angular/http';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { RestapiServiceProvider } from '../providers/restapi-service/restapi-service';
+
 
 
 
@@ -59,7 +61,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
     }
     ,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
-    LoginServiceProvider
+    LoginServiceProvider,
+    RestapiServiceProvider
   ]
 })
 export class AppModule { }

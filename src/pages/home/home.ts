@@ -8,15 +8,45 @@ import { ConsultaPage } from './../consulta/consulta';
 import { PerfilPage } from './../perfil/perfil';
 import { AboutPage } from './../about/about';
 
+import { RestapiServiceProvider } from '../../providers/restapi-service/restapi-service';
+
+
+
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
+
+
 export class HomePage {
 
+
+ public listaRU: any;
+ private url: string = "https://www.reddit.com/new.json";
+ users: any;
+
+
+
   constructor(public navCtrl: NavController, public cookieService: CookieService,
-     public requestOptions:RequestOptions) {
+     public requestOptions:RequestOptions, public restapiService: RestapiServiceProvider) {
+
+     this.getUsers();
+
   }
+
+
+  getUsers() {
+    this.restapiService.getUsers()
+    .then(data => {
+      this.users = data;
+    });
+  }
+
+
+
+
 
   public logout() {
     this.cookieService.removeAll();

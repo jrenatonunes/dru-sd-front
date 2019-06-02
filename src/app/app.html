@@ -1,17 +1,82 @@
-<ion-menu [content]="content">
+<ion-menu side="start"  [content]="content" no-padding>
 
-    <ion-content padding>
-    
-        <h4>Itens de Menu (App.html)</h4>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-        <ion-title>
-                https://ionicframework.com/docs/api/menu
-        </ion-title>
-        
-    
-    </ion-content>
-    
-    </ion-menu>
+  <ion-content no-padding class="no-scroll">
+
+    <ion-list padding>
+
+      <ion-item-divider>
+        <ion-label>
+          Minhas Atividades
+        </ion-label>
+      </ion-item-divider>
+
+      <button ion-item menuClose (click)="openPage(homePage)">
+        <ion-icon name="home" item-left=""></ion-icon>
+        Home
+      </button>
+
+      <button ion-item menuClose (click)="openPage(homePage)">
+        <ion-icon name="add-circle" color="secondary" item-left=""></ion-icon>
+        Cadatsrar RU
+      </button>
+
+      <button ion-item menuClose (click)="openPage(homePage)">
+        <ion-icon name="attach" item-left=""></ion-icon>
+        Minhas Consultas
+      </button>
+
+
+
+
+      <br>
+      <ion-item-divider>
+        <ion-label>
+          Solicitados pra Mim
+        </ion-label>
+      </ion-item-divider>
+
+      <button ion-item menuClose (click)="openPage(catsPage)">
+        <ion-icon name="pricetag" color="primary" item-left=""></ion-icon>
+        Consultas Solicitadas
+      </button>
+
+      <button ion-item menuClose (click)="openPage(dogsPage)">
+        <ion-icon name="pricetags" color="secondary" item-left=""></ion-icon>
+        Consultas Autorizadas
+      </button>
+
+
+
+
+      <br>
+      <ion-item-divider>
+        <ion-label>
+          Sistema
+        </ion-label>
+      </ion-item-divider>
+
+      <button ion-item menuClose (click)="openPage(dogsPage)">
+        <ion-icon name="information-circle" color="primary" item-left=""></ion-icon>
+        Sobre...
+      </button>
+
+      <button ion-item menuClose (click)="openPage(dogsPage)">
+        <ion-icon name="lock" color="danger" item-left=""></ion-icon>
+        Sair
+      </button>
+
+    </ion-list>
+
+
+  </ion-content>
+</ion-menu>
+
 
 
 <ion-nav [root]="rootPage" #content></ion-nav>

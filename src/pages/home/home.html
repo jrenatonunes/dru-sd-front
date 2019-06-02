@@ -1,26 +1,12 @@
 <ion-header>
-  <ion-navbar>
-
-      <ion-buttons start>
-          <button ion-button (click)="doClickConsulta()">
-            <ion-icon name="contact"></ion-icon>
-          </button>
-        </ion-buttons>
+  <ion-navbar color="primary">
         <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
         </button>
         <ion-title>
-          Home
+          Documento de Registro Único
         </ion-title>
-        <ion-buttons end>
-          <button ion-button (click)="doClickAbout()">
-            <ion-icon name="more"></ion-icon>
-          </button>
-        </ion-buttons>
-
   </ion-navbar>
-
-
 
 </ion-header>
 
@@ -28,14 +14,25 @@
 
 <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
 
+
 <ion-content padding>
-  <h2>Seja bem vindo ao Projeto DRU de SD 2019!</h2>
-  <p>
-    Aqui é sua tela inicial.
-  </p>
-  <button ion-button color="primary" (click)="pushPage()">Consulta</button>
+  <h2>Listagem de usuários</h2>
+  <hr>
+  <br>
 
-  <button ion-button color="secondary" (click)="pushPage()">Alterar</button>
+  <ion-list no-padding>
 
-  <button ion-button color="danger" (click)="logout()">Sair</button>
+    <ion-item no-padding ion-item *ngFor="let user of users">
+      <ion-thumbnail item-left>
+        <img class="circle" src="https://a.thumbs.redditmedia.com/PNviGIV-Yw7WSGknAz2kDTAKEx8iBGfhKXjJzENZEL8.jpg">
+      </ion-thumbnail>
+      <h2>{{user.name}}</h2>
+      <p>{{user.email}}</p>
+
+      <ion-icon name="add-circle" class="medio" color="primary" item-right (click)="openPage(dogsPage)"></ion-icon>
+
+    </ion-item>
+
+
+  </ion-list>
 </ion-content>
