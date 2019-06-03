@@ -1,4 +1,3 @@
-import { PerfilPage } from './../pages/perfil/perfil';
 import { InterceptorHttpService } from './../providers/InterceptorHttpService';
 import { CookieService } from 'angular2-cookie/core';
 import { Utils } from './../entity/Utils';
@@ -9,17 +8,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler, Events } from 'ionic-angular';
 import { ComponentInicial } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
-import { ConsultaPage } from '../pages/consulta/consulta';
+import { AboutPage } from './../pages/about/about';
+import { ConsultaPage } from './../pages/consulta/consulta';
+import { HomePage } from './../pages/home/home';
+import { PerfilPage } from './../pages/perfil/perfil';
+import { TabsPage } from './../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginServiceProvider } from '../providers/login-service/login-service';
 import { XHRBackend, RequestOptions } from '@angular/http';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { RestapiServiceProvider } from '../providers/restapi-service/restapi-service';
+
+import { RestapiServiceProvider } from './../providers/restapi-service/restapi-service';
 
 
 

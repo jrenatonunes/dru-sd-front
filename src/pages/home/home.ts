@@ -25,7 +25,7 @@ export class HomePage {
 
 
  public listaRU: any;
- public toast: Toast
+ public toast: Toast;
  private url: string = "https://www.reddit.com/new.json";
  users: any;
 
@@ -73,6 +73,7 @@ export class HomePage {
     this.navCtrl.setRoot(LoginPage);
 
   }
+
 
   pushPage() {
     this.navCtrl.setRoot(ConsultaPage);

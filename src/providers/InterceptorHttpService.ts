@@ -29,7 +29,7 @@ export class InterceptorHttpService implements HttpInterceptor {
                         case 401:
                             return this.getAccessToken(req, next);
                         case 0:
-                            return this.getAccessToken(req, next);    
+                            return this.getAccessToken(req, next);
                     }
                     Observable.throw(error);
                 }else{

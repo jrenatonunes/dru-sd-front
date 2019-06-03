@@ -77,3 +77,28 @@
 .gigante {
   zoom: 6.0;
 }
+
+
+
+
+.fundo-branco {
+  background-color: #ffffff;
+}
+
+
+$SIDEMENU_TOP: #339966;
+$SIDEMENU_BOTTOM: #001a33;
+
+.gradiente-sidemenu {
+  background: -webkit-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+  background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+  background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+  background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+}
+
+
+.background-sidemenu {
+  background-image: url('./../assets/images/background-03.jpg');
+  background-size: contain;
+  background-repeat:no-repeat;
+}

@@ -1,54 +1,57 @@
 <ion-menu side="start"  [content]="content" no-padding>
 
-  <ion-header>
+  <!-- <ion-header>
     <ion-toolbar color="primary">
       <ion-title>Menu</ion-title>
     </ion-toolbar>
 
-  </ion-header>
+  </ion-header> -->
 
   <ion-content no-padding class="no-scroll">
 
 
-    <div padding>
+    <div padding class="background-sidemenu">
 
       <!-- <ion-icon name="contact" class="gigante" item-left></ion-icon> -->
 
       <img src="../assets/images/usuario.png">
 
       <p>
+        <font color="white">
         <b>fulano</b><br>
         Fulano de Tal<br>
-        <i>fulano@fulanodetal.com.br</i>
+        fulano@fulanodetal.com.br
+        </font>
       </p>
+
     </div>
 
 
 
-    <ion-list no-padding no-lines>
-
+    <ion-list no-padding no-lines class="fundo-branco">
+<!--
       <ion-item-divider>
-        <!-- <ion-label>
+        <ion-label>
           Minhas Atividades
-        </ion-label> -->
-      </ion-item-divider>
+        </ion-label>
+      </ion-item-divider> -->
 
 
 
 
-      <button ion-item menuClose (click)="openPage(homePage)">
+      <button ion-item menuClose (click)="openHome()">
         <ion-icon name="home" item-left=""></ion-icon>
         Home
       </button>
 
-      <button ion-item menuClose (click)="openPage(homePage)">
-        <ion-icon name="add-circle" color="secondary" item-left=""></ion-icon>
-        Cadatsrar RU
+      <button ion-item menuClose (click)="openHome()">
+        <ion-icon name="search" color="secondary" item-left=""></ion-icon>
+        Consultar DRU
       </button>
 
-      <button ion-item menuClose (click)="openPage(homePage)">
+      <button ion-item menuClose (click)="openPerfil()">
         <ion-icon name="attach" item-left=""></ion-icon>
-        Minhas Consultas
+        Alterar DRU
       </button>
 
 
@@ -61,12 +64,12 @@
         </ion-label> -->
       </ion-item-divider>
 
-      <button ion-item menuClose (click)="openPage(catsPage)">
+      <button ion-item menuClose (click)="openHome()">
         <ion-icon name="pricetag" color="primary" item-left=""></ion-icon>
         Consultas Solicitadas
       </button>
 
-      <button ion-item menuClose (click)="openPage(dogsPage)">
+      <button ion-item menuClose (click)="openPerfil()">
         <ion-icon name="pricetags" color="secondary" item-left=""></ion-icon>
         Consultas Autorizadas
       </button>
@@ -81,12 +84,12 @@
         </ion-label> -->
       </ion-item-divider>
 
-      <button ion-item menuClose (click)="openPage(dogsPage)">
+      <button ion-item menuClose (click)="openHome()">
         <ion-icon name="information-circle" color="primary" item-left=""></ion-icon>
         Sobre...
       </button>
 
-      <button ion-item menuClose (click)="openPage(dogsPage)">
+      <button ion-item menuClose (click)="openPerfil()">
         <ion-icon name="lock" color="danger" item-left=""></ion-icon>
         Sair
       </button>
@@ -99,4 +102,4 @@
 
 
 
-<ion-nav [root]="rootPage" #content></ion-nav>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

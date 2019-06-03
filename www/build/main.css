@@ -27549,6 +27549,22 @@ ion-navbar.toolbar {
   zoom: 6.0;
 }
 
+.fundo-branco {
+  background-color: #ffffff;
+}
+
+.gradiente-sidemenu {
+  background: -webkit-gradient(left top, #339966, #001a33);
+  background: -webkit-gradient(linear, left top, right bottom, from(#339966), to(#001a33));
+  background: linear-gradient(to bottom right, #339966, #001a33);
+}
+
+.background-sidemenu {
+  background-image: url("./../assets/images/background-03.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 page-consulta .user-photo ion-avatar {
   margin: 0 auto;
   width: 120px;
