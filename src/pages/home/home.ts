@@ -9,7 +9,8 @@ import { PerfilPage } from './../perfil/perfil';
 import { AboutPage } from './../about/about';
 
 import { RestapiServiceProvider } from '../../providers/restapi-service/restapi-service';
-import { Toast } from '@ionic-native/toast/ngx';
+// import { Toast } from '@ionic-native/toast/ngx';
+import { ToastController } from 'ionic-angular';
 
 
 
@@ -31,7 +32,8 @@ export class HomePage {
 
 
   constructor(public navCtrl: NavController, public cookieService: CookieService,
-     public requestOptions:RequestOptions, public restapiService: RestapiServiceProvider) {
+     public requestOptions:RequestOptions, public restapiService: RestapiServiceProvider,
+     public toastCtrl: ToastController) {
 
      this.getUsers();
 
@@ -47,6 +49,14 @@ export class HomePage {
 
 
 
+  favoriteRecipe(user):void {
+
+    let toast = this.toastCtrl.create({
+      message: "Gerada solicitação para " + user.username,
+      duration: 2000
+    });
+    toast.present();
+  }
 
 
   itemSelecionado (user):void {

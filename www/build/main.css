@@ -27498,7 +27498,7 @@ ion-navbar.toolbar {
 }
 
 .no-scroll .scroll-content {
-  overflow: hidden;
+  overflow: auto;
 }
 
 .rounded-20 {
@@ -27526,7 +27526,7 @@ ion-navbar.toolbar {
 }
 
 .pequeno {
-  zoom: 0.75;
+  zoom: 0.60;
 }
 
 .normal {
