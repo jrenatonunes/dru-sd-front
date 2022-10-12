@@ -15,7 +15,7 @@
     "ionic_cleancss": "./config/cleancss.config.js"
   },
   "dependencies": {
-    "@angular/cli": "1.2.1",
+    "@angular/cli": "1.7.4",
     "@angular/common": "^4.4.7",
     "@angular/compiler": "^4.4.7",
     "@angular/compiler-cli": "^4.4.7",
@@ -35,7 +35,7 @@
     "angular2": "^2.0.0-beta.21",
     "angular2-cookie": "^1.2.6",
     "angular2-cookie-law": "^7.0.1",
-    "cordova-android": "^6.2.3",
+    "cordova-android": "^11.0.0",
     "cordova-browser": "^6.0.0",
     "cordova-plugin-device": "1.1.4",
     "cordova-plugin-splashscreen": "~4.0.1",
@@ -52,7 +52,7 @@
     "zone.js": "0.8.12"
   },
   "devDependencies": {
-    "@angular/cli": "1.2.1",
+    "@angular/cli": "1.7.4",
     "@angular/compiler": "^4.4.7",
     "@angular/compiler-cli": "^4.4.7",
     "@angular/core": "^4.4.7",
