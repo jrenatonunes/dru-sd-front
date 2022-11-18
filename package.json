@@ -15,7 +15,7 @@
     "ionic_cleancss": "./config/cleancss.config.js"
   },
   "dependencies": {
-    "@angular/cli": "1.2.1",
+    "@angular/cli": "1.7.4",
     "@angular/common": "^4.4.7",
     "@angular/compiler": "^4.4.7",
     "@angular/compiler-cli": "^4.4.7",
@@ -52,7 +52,7 @@
     "zone.js": "0.8.12"
   },
   "devDependencies": {
-    "@angular/cli": "1.2.1",
+    "@angular/cli": "1.7.4",
     "@angular/compiler": "^4.4.7",
     "@angular/compiler-cli": "^4.4.7",
     "@angular/core": "^4.4.7",
